@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    color: #555;
+    background-color: #1f1e1e15;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fd8a24;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.top-bar {
+    padding: 10px;
+}
+.blue{
+    color: #0669de;
+}
+.violet{
+    color: #c4170c;
+}
+.green{
+    color: #4bad48;
+}
+.orange{
+    color: #ff6900;
+}
+.pink{
+    color: #fb2484;
+}
+.very-blue {
+    color: #2b4c9a;
+}
+.top-bar-link {
+    text-align: center;
+    border-right: 1px solid #5555550f;
+    padding-right: 10px;
+}
+
+.header {
+    text-align: center;
+    background-color: #fd8a24;
+    width: 100%;
+    margin: 0;
+}
+#logo {
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+    border-radius: 6px;
+    background-color: #fff;
+    top: 30px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+.content {
+    padding: 10px;
+}
+
+.content_items {
+    width: 700px;
+    margin: auto;
+}
+.content-item {
+    height: 270px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #555;
+}
+.assunto {
+    position: relative;
+    left: 300px;
+    bottom: 225px;
+    padding-left: 20px;
+}
+
+#headline {
+    font-size: 15px;
+}
+#sub-title {
+    color: #fd8a24;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    max-width: 400px;
+}
+#font {
+    width: 400px;
+    font-size: 15px;
+    margin: 0;
+}
+#date {
+    font-size: 10px;;
+}
+.content-item img {
+    background-image: url('imagens/moedas.png');
+    background-size: cover;
+    height: 80%;
+    width: 300px;
+}
+
+
+#footer {
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #fd8a24;
+    padding: 10px;
+}
+#footer-headline{
+    margin: auto;
+    color: #fff;
+    width: 130px;
+}
+#footer-items{
+    margin: auto;
+    width: 120px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icon {
+    width: 20px;
+    padding: 10px 10px 10px 0;
+}
