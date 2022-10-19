@@ -10,4 +10,6 @@ Pagina de conteúdo parcialmente expirada no site <i>G1</i>. Essa pagina teve o 
   <li>Links direcionados para outras pagínas;</li>
   <li>Estilização e armonia dos elementos na tela;</li>
 </ul>
-.
+<br>
+Ainda não foi implementado nenhum tipo de teste de responsividade
+Nessa página.
