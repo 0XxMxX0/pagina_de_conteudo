@@ -10,6 +10,7 @@ Pagina de conteúdo parcialmente expirada no site <i>G1</i>. Essa pagina teve o 
   <li>Links direcionados para outras pagínas;</li>
   <li>Estilização e armonia dos elementos na tela;</li>
 </ul>
-<br>
-Ainda não foi implementado nenhum tipo de teste de responsividade
-Nessa página.
+
+Quer ver esse projeto?<br>
+<a href="https://0xxmxx0.github.io/pagina_de_conteudo/">Link para a pagína</a>
+
