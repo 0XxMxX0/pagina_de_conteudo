@@ -3,12 +3,13 @@ body {
     padding: 0;
     width: 100vw;
     color: #555;
-    
-    /* font-family: 'OpenSansV'; */
     font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 h1, h2  {
     color: #111;
+}
+h1{
+    color: #ff6900;
 }
 a {
     text-decoration: none;
