@@ -1,113 +1,154 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
     color: #555;
-    min-width: 300px;
-    background-color: #1f1e1e15;
+    overflow-x: hidden;
+    background-color: #bebebe28;
+    min-width: 375px;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
+
+/* Formatos dos links */
 a {
     text-decoration: none;
     color: #fd8a24;
     font-weight: bold;
 }
-.container {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 190px;
-}
 
+/* TOP-BAR */
 .top-bar {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+    padding: 0px 10px 0px 10px; 
     text-align: left;
+    margin-bottom: 0px;
+}
+li {
+    /* background-color: red; */
+    border-top: 3px solid #fff;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    margin-left: -5px;
 }
 .top-bar-links {
-    margin-right: 10px;
+    border-right: 1px solid #5251513f;
+    border-left: 1px solid #5251513f;
+    padding-right: 10px;
+    height: 5px;
+    padding-left: 10px;
 }
 .blue{
     color: #0669de;
+    border: none;
+}
+.blue:hover {
+    color: #0667de88;
 }
 .violet{
     color: #c4170c;
 }
+.top-violet:hover{
+    border-top: 3px solid #c4170c;
+}
 .green{
     color: #4bad48;
+}
+.top-green:hover{
+    border-top: 3px solid #4bad48;
 }
 .orange{
     color: #ff6900;
 }
+.top-orange:hover{
+    border-top: 3px solid #ff6900;
+}
 .pink{
-    color: #fb2484;
+    color: #fb0234;
+}
+.top-pink:hover{
+    border-top: 3px solid #fb0234;
 }
 .very-blue {
     color: #2b4c9a;
 }
+.top-very-blue:hover{
+    border-top: 3px solid #2b4c9a;
+}
+
+/* HEADER */
 #header {
     width: 100%;
-    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
     background-color: #333;
     border-bottom: 5px solid #fd8a24;
-    margin: 0;
-    padding: 10px;
+}
+#header-logo{
     color: #fff;
     font-weight: bold;
     font-size: 30px;
+    margin: auto;
+    text-align: center;
 }
 
-.content {
-    background-color: #fff;
-    position: relative;
-    top: 50px;
-    margin: auto;
-    width: 80%;
-    padding: 20px;
-    border-radius: 6px;
+/* CONTENT */
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 190px;
 }
-#content_items {
-    padding: 0px 10px 10px 10px;
-    margin: auto;
+.content {
+    /* background-color: #fff; */
+    position: relative;
+    width: 60%;
+    top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 #content-info {
-    width: 60%;
-    margin: auto;
-    padding: 10px;
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #3333334e;
 }
+
+.content-img {
+    float: left;
+    overflow:hidden;
+    margin-right: 10px;
+}
+.content-img img {
+    width: 270px;
+}
+
 #headline {
-    font-size: 1.5em;
+    margin-top: 1px; 
+    margin-bottom: 5px; 
+    font-size: 1em;
 }
 #sub-title {
     color: #fd8a24;
-    font-size: 2em;
-    margin: 0;
+    font-size: 1.5em;
+    margin: 0 ;
     font-weight: bold;
 }
 #cta {
-    font-size: 1.3em;
+    margin: 10px 0 1px 0;
+    font-size: 0.9em;
 }
 #date {
-    font-size: 1.2em;
+    margin-top: 8px;
+    font-size: 0.7em;
 }
 
+/* FOOTER */
+
 #footer {
-    position: fixed;
+    position: relative;
     background-color: #333;
-    width: 100%;
-    bottom: 0;
     border-top: 5px solid #fd8a24;
-    padding: 10px;
-}
-#footer-headline{
-    margin: auto;
-    color: #fff;
-    width: 130px;
-}
-#footer-items{
-    margin: auto;
-    width: 120px;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 .social-icons {
     margin-top: 10px;
@@ -115,5 +156,50 @@ a {
 .social-icon {
     width: 20px;
     padding: 10px 10px 10px 0;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .top-bar {
+        display: none;
+    }
+    .content{
+        margin: auto;
+    }
+    #content-info{
+        left: 0;
+    }
+    
+    .content-img {
+        /* float: left; */
+        display: none;
+        /* overflow:hidden; */
+        /* margin-right: 10px; */
+    }
+    .content-img img {
+        width: 100%;
+    }
+    
+
+    #headline {
+        /* background-color: red; */
+        /* position: absolute;
+        top: 0; */
+    }
+    #sub-title {
+        color: #fd8a24;
+        font-size: 1.5em;
+        margin: 0 ;
+        font-weight: bold;
+    }
+    #cta {
+        margin: 10px 0 1px 0;
+        font-size: 0.9em;
+    }
+    #date {
+        margin-top: 8px;
+        font-size: 0.7em;
+    }
 }
 

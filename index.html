@@ -3,6 +3,7 @@
         <head>
             <title>Página de conteúdo</title>
             <meta charset="UTF-8"/>
+            <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
             <link rel="stylesheet" href="./styleIndex.css"/>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,70 +11,88 @@
         </head>
         <body>
             <!-- top-bar  -->
-            <div class="top-bar">
-                <a class='top-bar-links blue' href="#">Globo.com</a>
-                <a class='top-bar-links violet' href="#">g1</a>
-                <a class='top-bar-links green' href="#">ge</a>
-                <a class='top-bar-links orange' href="#">gshow</a>
-                <a class='top-bar-links pink' href="#">globoplay</a>
-                <a class='top-bar-links very-blue' href="#">o globo</a>
-            </div>
+            <!-- <div "> -->
+            <ul class="top-bar">
+                <li>
+                    <a class='top-bar-links blue' href="#">Globo.com</a>
+                </li>
+                <li class="top-violet">
+                    <a class='top-bar-links violet' href="#">g1</a>
+                </li>
+                <li class="top-green">
+                    <a class='top-bar-links green' href="#">ge</a>
+                </li>
+                <li class="top-orange">
+                    <a class='top-bar-links orange' href="#">gshow</a>
+                </li>
+                <li class="top-pink">
+                    <a class='top-bar-links pink' href="#">globoplay</a>
+                </li>
+                <li class="top-very-blue">
+                    <a class='top-bar-links very-blue' href="#">o globo</a>
+                </li>
+            </ul>
+            <!-- </div> -->
 
             <!-- Header -->
-            <div id="header">G1</div>
-
-            <!-- countent -->
-           <div class="container">
-               <div class="content">
-                    <div id="content_items">
-                        <div id="content-info">
-                            <h2 id="headline">Qual comprar?</h2>
-                            <a href="light.html">
-                                <p id="sub-title">
-                                    Os 'vilões' da luz: veja o que mais
-                                    gasta energia e como economizar
-                                </p>
-                            </a>
-                            <p id="cta">
-                                Eletrônicos e eletrodomésticos da sua casa podem pesar na 
-                                conta de luz no final do mês; veja quais são                                </p>
-                            <p id="date">
-                                Há 11 horas - Eleições 2022
-                            </p>
-                        </div>
-                    </div>
-                    <div id="content_items">
-                        <div id="content-info">
-                            <h2 id="headline">Qual comprar?</h2>
-                            <a href="light.html">
-                                <p id="sub-title">
-                                    Os 'vilões' da luz: veja o que mais
-                                    gasta energia e como economizar
-                                </p>
-                            </a>
-                            <p id="cta">
-                                Eletrônicos e eletrodomésticos da sua casa podem pesar na 
-                                conta de luz no final do mês; veja quais são                                </p>
-                            <p id="date">
-                                Há 11 horas - Eleições 2022
-                            </p>
-                        </div>
-                    </div>
+            <div id="header">
+                <div id="header-logo">
+                    G1
                 </div>
             </div>
+
+            <!-- content -->
+        <div class="container">
+            <div class="content">
+                <div id="content-info">
+                    <div class="content-img">
+                        <a src="light.html"><img src="/imagens/moedas.png"></a>
+                    </div>
+                        <h2 id="headline">Qual comprar?</h2>
+                    <a href="light.html">
+                        <p id="sub-title">
+                            Os 'vilões' da luz: veja o que mais
+                            gasta energia e como economizar
+                        </p>
+                    </a>
+                    <p id="cta">
+                        Eletrônicos e eletrodomésticos da sua casa podem pesar na 
+                        conta de luz no final do mês; veja quais são                                
+                    </p>
+                    <p id="date">
+                        Há 11 horas - Economia
+                    </p>
+                </div>
+                <div id="content-info">
+                    <h2 id="headline">Economia</h2>
+                    <a>
+                        <p id="sub-title">
+                            Caixa congela por 24 horas liberação de consignado do 
+                            Auxílio Brasil 
+                        </p>
+                    </a>
+                    <p id="cta">
+                        Mais cedo, TCU recomendou suspensão e 
+                        determinou esclarecimentos sobre o 
+                        empréstimo.   
+                    </p>
+                    <p id="date">
+                        Há 1 hora - Eleições 2022
+                    </p>
+                </div>
+            </div>
+        </div>
             <!-- FOOTER -->
             <div id="footer">
-                <div class="footer-container">
-                    <div class="social-icons footer-social-icons">
-                        <a href="#">
-                            <img class="social-icon" src="./imagens/facebook.png" alt="rede social - facebook"/>
-                        <a href="#">
-                            <img class="social-icon" src="./imagens/twitter.png" alt="rede social - twitter"/>
-                        </a>    
-                        <a href="#">
-                            <img class="social-icon" src="./imagens/whatsapp.png" alt="rede social - whatsapp"/>
-                        </a>
-                    </div>
+               <div class="social-icons footer-social-icons">
+                    <a href="#">
+                        <img class="social-icon" src="./imagens/facebook.png" alt="rede social - facebook"/>
+                    <a href="#">
+                        <img class="social-icon" src="./imagens/twitter.png" alt="rede social - twitter"/>
+                    </a>    
+                    <a href="#">
+                        <img class="social-icon" src="./imagens/whatsapp.png" alt="rede social - whatsapp"/>
+                    </a>
                 </div>
             </div>
         </body>
