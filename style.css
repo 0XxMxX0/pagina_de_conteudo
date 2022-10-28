@@ -9,11 +9,11 @@ h1, h2  {
     color: #111;
 }
 h1{
-    color: #ff6900;
+    color: #c4170c;
 }
 a {
     text-decoration: none;
-    color: #fd8a24;
+    color: #c4170c;
     font-weight: 700;
 }
 p {
@@ -84,14 +84,14 @@ li {
     border-top: 3px solid #2b4c9a;
 }
 .top-bar-nav {
-    background-color: #333;
+    background-color: #c4170c;
     position: relative;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     padding: 8px;
-    border-bottom: 5px solid #fd8a24;
+    border-bottom: 5px solid #c4170c;
 }
 #logo {
     position: absolute;
@@ -205,13 +205,13 @@ figure > img {
     font-weight: normal
 } */
 
-#footer {
-    background-color: #333;
-    border-top: 5px solid #fd8a24;
+/* #footer {
+    background-color: #c4170c;
+    border-top: 5px solid #c4170c;
     padding: 10px;
     position: relative;
     width: 100%;
-}
+} */
 
 
 
