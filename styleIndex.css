@@ -95,7 +95,7 @@ a {
     width: 100%;
     max-width: 888px;
     margin: auto;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
 }
 #content-infos {
     position: relative;
@@ -154,10 +154,11 @@ a {
 #content-infos-two{
     /* position: relative; */
     list-style: none;
-    padding: 10px;
+    padding: 10px 10px 10px 35px;
 }
 #content-infos-two img {
     width: 100%;
+    border-radius: 10px;
 }
 
 #content-infos-two-text {
