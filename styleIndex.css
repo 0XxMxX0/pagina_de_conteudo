@@ -4,82 +4,80 @@ body {
     color: #555;
     overflow-x: hidden;
     background-color: #bebebe28;
-    min-width: 375px;
+    width: 100vw;
+    min-width: 300px;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 
-/* Formatos dos links */
 a {
     text-decoration: none;
-    color: #fd8a24;
-    font-weight: bold;
 }
 
-/* TOP-BAR */
-.top-bar {
+/* ------ TOP-BAR ----- */
+#top-bar {
     padding: 0px 10px 0px 10px; 
     text-align: left;
     margin-bottom: 0px;
 }
-li {
-    /* background-color: red; */
-    border-top: 3px solid #fff;
+#top-bar li {
+    border-top: 3px solid #bebebe28;
     display: inline-block;
     padding: 10px 0 10px 0;
     margin-left: -5px;
 }
-.top-bar-links {
+#top-bar li a {
+    font-weight: bold;
     border-right: 1px solid #5251513f;
     border-left: 1px solid #5251513f;
     padding-right: 10px;
     height: 5px;
     padding-left: 10px;
+    font-size: 15px;
 }
-.blue{
+#blue{
     color: #0669de;
     border: none;
 }
-.blue:hover {
+#blue:hover {
     color: #0667de88;
 }
-.violet{
+#violet{
     color: #c4170c;
 }
-.top-violet:hover{
+#top-violet:hover{
     border-top: 3px solid #c4170c;
 }
-.green{
+#green{
     color: #4bad48;
 }
-.top-green:hover{
+#top-green:hover{
     border-top: 3px solid #4bad48;
 }
-.orange{
+#orange{
     color: #ff6900;
 }
-.top-orange:hover{
+#top-orange:hover{
     border-top: 3px solid #ff6900;
 }
-.pink{
+#pink{
     color: #fb0234;
 }
-.top-pink:hover{
+#top-pink:hover{
     border-top: 3px solid #fb0234;
 }
-.very-blue {
+#very-blue {
     color: #2b4c9a;
 }
-.top-very-blue:hover{
+#top-very-blue:hover{
     border-top: 3px solid #2b4c9a;
 }
 
-/* HEADER */
+/* ------ HEADER ----- */
 #header {
-    width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #333;
-    border-bottom: 5px solid #fd8a24;
+    background-color: #c4170c;
+    border-bottom: 5px solid #c4170c;
 }
 #header-logo{
     color: #fff;
@@ -89,57 +87,64 @@ li {
     text-align: center;
 }
 
-/* CONTENT */
-.container {
+/* ------ container-content ----- */
+#content {
+    box-sizing: border-box;
     width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 190px;
+    max-width: 888px;
+    margin: auto;
+    padding: 30px;
 }
-.content {
-    /* background-color: #fff; */
-    position: relative;
-    width: 60%;
-    top: 10px;
-    box-sizing: border-box;
+#content-infos {
+    list-style: none;
     padding: 10px;
 }
-#content-info {
-    position: relative;
-    left: 50px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #3333334e;
-}
 
+/* -- content-img -- */
 .content-img {
-    float: left;
-    overflow:hidden;
-    margin-right: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 40%;
 }
-.content-img img {
+.content-img img{
+    width: 100%;
     width: 270px;
 }
 
-#headline {
-    margin-top: 1px; 
-    margin-bottom: 5px; 
-    font-size: 1em;
+/* --- infos - Textos das materias--- */
+.infos {
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    min-width: 420px;
 }
-#sub-title {
-    color: #fd8a24;
-    font-size: 1.5em;
-    margin: 0 ;
+.infos ul {
+    list-style: none;
+    padding: 0;
+}
+.infos-headline {
+    padding: 0px 10px 10px 10px;
+    font-size: 14px;
     font-weight: bold;
 }
-#cta {
-    margin: 10px 0 1px 0;
-    font-size: 0.9em;
+.infos-cta {
+    color: #c4170c;
+    font-size: 20px;
+    padding: 0px 10px 6px 10px;
+    font-weight: bold;
 }
-#date {
-    margin-top: 8px;
-    font-size: 0.7em;
+.infos-extras {
+    padding: 10px;
+    padding: 0 0 0 10px;
+    font-size: 13px;
 }
-
+.infos-date {
+    padding: 15px 0 20px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #3333334e;
+}
 /* FOOTER */
 
 #footer {
@@ -159,47 +164,58 @@ li {
 }
 
 
+/* CELULAR - WIDTH 500 */
+@media screen and (max-width: 780px) {
+    /* ------ TOP-BAR ----- */
+    #top-bar {
+        display: none;
+    }
 
-@media screen and (max-width: 750px) {
-    .top-bar {
-        display: none;
+    /* ------ container-content ----- */
+    #content {
+        /* position: relative; */
+        box-sizing: border-box;
+        padding: 0;
     }
-    .content{
-        margin: auto;
+    #content-infos {
+        background-color: #fff;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
-    #content-info{
-        left: 0;
-    }
-    
+
+    /* -- content-img -- */
     .content-img {
-        /* float: left; */
-        display: none;
-        /* overflow:hidden; */
-        /* margin-right: 10px; */
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 10px 10px 0 10px;
     }
-    .content-img img {
+    .content-img img{
         width: 100%;
     }
-    
 
-    #headline {
-        /* background-color: red; */
-        /* position: absolute;
-        top: 0; */
+    /* --- infos - Textos das materias--- */
+    .infos {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 90%;
+        min-width: 100px;
     }
-    #sub-title {
-        color: #fd8a24;
-        font-size: 1.5em;
-        margin: 0 ;
+    .infos ul {
+        list-style: none;
+        padding: 0;
+    }
+    .infos-headline {
+        padding: 10px;
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
+    .infos-cta {
+        padding: 10px;
         font-weight: bold;
-    }
-    #cta {
-        margin: 10px 0 1px 0;
-        font-size: 0.9em;
-    }
-    #date {
-        margin-top: 8px;
-        font-size: 0.7em;
     }
 }
 
