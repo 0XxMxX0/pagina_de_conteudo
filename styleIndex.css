@@ -91,7 +91,7 @@ header,#content-important,#infos  {
 }
 header {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1000;
     background-color: #c4170c;
     border-bottom: 5px solid #c4170c;
@@ -114,12 +114,14 @@ header {
     width: 90%;
     bottom: 140px;
     padding-left: 20px;
+    transform: translate(0px, -80px);
 }
 #content-description a {
     text-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+    font-size: 50px;
 }
 #content{
-    bottom: 100px;
+    bottom: 160px;
     border-bottom: 1px solid rgb(208, 204, 204);
     margin-bottom: 10px;
 }
@@ -139,7 +141,7 @@ header {
 
 #content-extra {
     position: relative;
-    bottom: 65px;
+    bottom: 100px;
 }
 #content-extra #title {
     font-size: 15px;
