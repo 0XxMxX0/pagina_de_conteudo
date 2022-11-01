@@ -210,6 +210,9 @@ header {
     margin: auto;
 }
 
+.mobile {
+    display: none;
+}
 #content-publicidad,#title-blog, #bloco img, #bloco p {
     display: none;
 }
@@ -232,7 +235,7 @@ header {
     #content-description, #content-important img,#top-bar,#content-extra {
         display: none;
     }
-    #content-publicidad,#title-blog, #bloco img, #bloco p {
+    #content-publicidad,#title-blog, #bloco img, #bloco p, .mobile {
         display: block;
     }
     #content {
