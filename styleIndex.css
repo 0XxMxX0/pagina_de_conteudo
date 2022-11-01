@@ -107,6 +107,7 @@ header {
 }
 #content-important img{
     overflow: hidden;
+    filter: brightness(80%);
     border-radius: 10px;
 }
 #content-description{
@@ -117,8 +118,9 @@ header {
     transform: translate(0px, -80px);
 }
 #content-description a {
-    text-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+    text-shadow: 0 1px 6px rgb(0 0 0 / 80%);
     font-size: 50px;
+    font-weight: bold;
 }
 #content{
     bottom: 160px;
