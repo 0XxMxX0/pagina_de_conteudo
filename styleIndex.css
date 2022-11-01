@@ -262,7 +262,6 @@ header {
     }
     #title-blog {
         display: block;
-        /* background-color: blue; */
         padding: 10px;
         font-weight: bold;
         color: #000000c6;
@@ -272,7 +271,6 @@ header {
     }
     #content-publicidade {
         display: block;
-        /* background-color: red; */
         padding: 0px;
         box-sizing: border-box;
         border: 1px solid #1e1f21;
@@ -280,7 +278,6 @@ header {
     }
    
     #bloco {
-        /* padding: 10px; */
         background-color: #fff;
         height: 150px;
         box-sizing: border-box;
@@ -296,9 +293,9 @@ header {
         transform: translate(20px,10px);
         padding: 10px;
         width: 70%;
-        /* background-color: red; */
     }
     #bloco #title {
+        color: #c4170c;
         transform: translate(10px,20px);
         font-weight: bold;
     }
